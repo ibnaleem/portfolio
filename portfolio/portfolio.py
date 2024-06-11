@@ -1,5 +1,6 @@
 import reflex as rx
 from .pages.pgp import pgp
+from .pages.robots import robots
 
 @rx.page(route="/", title="Shaffan's Portfolio")
 def index() -> rx.Component:
@@ -8,3 +9,4 @@ def index() -> rx.Component:
 app = rx.App(theme=rx.theme(appearance="dark", has_background=True, radius="large", accent_color="teal"))
 app.add_page(index)
 app.add_page(pgp)
+app.add_page(robots)
